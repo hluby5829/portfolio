@@ -1,0 +1,116 @@
+.card {
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.card:hover {
+  cursor: pointer;
+  top: -10px;
+}
+
+.card-img {
+  border-radius: 15px;
+}
+
+.card-img-overlay {
+  border-radius: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+}
+
+.card-text {
+  margin: 0;
+}
+
+.card-words {
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  transition: bottom ease 0.45s;
+}
+
+.card-words:hover {
+  bottom: 5px;
+}
+
+.col {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.col-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.col-lg-6 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.dropdown-item:active {
+  background-color: #a7a7a7;
+}
+
+/*source: https://dev.to/selbekk/how-to-fade-in-content-as-it-scrolls-into-view-10j4*/
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.header {
+  height: 90vh;
+  width: 100%;
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-link {
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+/*source: https://css-tricks.com/snippets/css/typewriter-effect/*/
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(0, 0, 0); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.05em; /* Adjust as needed */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
